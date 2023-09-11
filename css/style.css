@@ -44,3 +44,10 @@ body {
 .header__autorization__link:first-child {
     margin-right: 15px;
 }
+/* 10 */
+.content__search {
+    padding: 3% 5%;
+}
+.content__search__heading {
+    font-size: 2rem;
+}
