@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>Вхід</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<a href="../index.html" class="header__link">
+					<img src="../img/logo.png" alt="" class="header__logo" />
+				</a>
+				<h1 class="header__heading">Автомагазин</h1>
+				<div class="header__autorization">
+					<a
+						href="../pages/registration.html"
+						class="header__autorization__link">
+						Реєстрація
+					</a>
+				</div>
+			</header>
+			<main class="login">
+				<section class="login__form">
+					<h2 class="form__heading">Вхід:</h2>
+					<form action="https://fom.in.ua/echo" class="form">
+						<fieldset class="form__item">
+							<label for="post" class="form__label"> Пошта </label>
+							<input
+								type="email"
+								name="post"
+								id="post"
+								class="form__input"
+								placeholder="Пошта" />
+						</fieldset>
+						<fieldset class="form__item">
+							<label for="password" class="form__label"> Пароль </label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								class="form__input"
+								placeholder="Пароль" />
+						</fieldset>
+						<fieldset class="form__item form__item--special">
+							<input
+								type="radio"
+								name="remember"
+								id="remember"
+								class="form__radio" />
+							<label for="remember">Запамятати мене</label>
+							<a href="#"> Забули пароль?</a>
+						</fieldset>
+						<div class="form__btn">
+							<button type="submit" class="form__btn__item">Вхід</button>
+						</div>
+					</form>
+				</section>
+			</main>
+			<footer class="footer">
+				<a href="../index.html" class="header__link">
+					<img src="../img/logo.png" alt="" class="footer__logo" />
+				</a>
+				<h1 class="footer__heading">Автомагазин</h1>
+			</footer>
+		</div>
+	</body>
 </html>
