@@ -20,178 +20,229 @@
 				</a>
 			</div>
 		</header>
-		<main class="content">
-			<section class="content__search">
-				<h2 class="content__search__heading">Пошук автомобіля:</h2>
-				<form action="https://fom.in.ua/echo" class="content__search__form">
-					<div class="form__content">
-						<label for="CarType" class="form__label"> Тип автомобіля </label>
-						<select name="car_type" id="CarType" class="form__select" required>
-							<option selected hidden disabled>Тип автомобіля</option>
-							<option value="passenger">Лековий</option>
-							<option value="truck">Вантажний</option>
-						</select>
-						<label for="CarName" class="form__label"> Марка автомобіля </label>
-						<select name="car_name" id="CarName" class="form__select" required>
-							<option selected hidden disabled>Марка автомобіля</option>
-							<option value="bmw">BMW</option>
-							<option value="audi">Audi</option>
-							<option value="ford">Ford</option>
-							<option value="kia">Kia</option>
-							<option value="volkswagen">Volkswagen</option>
-						</select>
-						<label for="CarCountry" class="form__label">
-							Країна виробник
-						</label>
-						<select
-							name="car_country"
-							id="CarCountry"
-							class="form__select"
-							required>
-							<option selected hidden disabled>Країна виробник</option>
-							<option value="us">Америка</option>
-							<option value="kr">Корея</option>
-							<option value="de">Німечина</option>
-						</select>
-						<label for="CarFuel" class="form__label"> Тип палива </label>
-						<select name="car_fuel" id="CarFuel" class="form__select" required>
-							<option selected hidden disabled>Тип палива</option>
-							<option value="gasoline">Бензин</option>
-							<option value="diesel">Дизель</option>
-							<option value="electric">Електричний</option>
-						</select>
+		< class="content">
+		<section class="content__search">
+			<h2 class="content__search__heading">Пошук автомобіля:</h2>
+			<form action="https://fom.in.ua/echo" class="content__search__form">
+				<div class="form__content">
+					<div class="form__content__box">
+						<fieldset class="form__item">
+							<label for="CarType" class="form__label"> Тип автомобіля </label>
+							<select name="car_type" id="CarType" class="form__select">
+								<option selected hidden disabled value="">
+									Тип автомобіля
+								</option>
+								<option value="passenger">Лековий</option>
+								<option value="truck">Вантажний</option>
+							</select>
+						</fieldset>
+						<fieldset class="form__item">
+							<label for="CarName" class="form__label">
+								Марка автомобіля
+							</label>
+							<select name="car_name" id="CarName" class="form__select">
+								<option selected hidden disabled value="">
+									Марка автомобіля
+								</option>
+								<option value="bmw">BMW</option>
+								<option value="audi">Audi</option>
+								<option value="ford">Ford</option>
+								<option value="kia">Kia</option>
+								<option value="volkswagen">Volkswagen</option>
+							</select>
+						</fieldset>
+						<fieldset class="form__item">
+							<label for="CarCountry" class="form__label">
+								Країна виробник
+							</label>
+							<select name="car_country" id="CarCountry" class="form__select">
+								<option selected hidden disabled value="">
+									Країна виробник
+								</option>
+								<option value="us">Америка</option>
+								<option value="kr">Корея</option>
+								<option value="de">Німечина</option>
+							</select>
+						</fieldset>
+						<fieldset class="form__item">
+							<label for="CarFuel" class="form__label"> Тип палива </label>
+							<select name="car_fuel" id="CarFuel" class="form__select">
+								<option selected hidden disabled value="">Тип палива</option>
+								<option value="gasoline">Бензин</option>
+								<option value="diesel">Дизель</option>
+								<option value="electric">Електричний</option>
+							</select>
+						</fieldset>
 					</div>
-					<div class="form__content">
-						<label for="CarColor" class="form__label"> Колір </label>
-						<select
-							name="car_color"
-							id="CarColor"
-							class="form__select"
-							required>
-							<option selected hidden disabled>Колір</option>
-							<option value="blue">Синій</option>
-							<option value="black">Чорний</option>
-							<option value="white">Білий</option>
-						</select>
-						<label class="form__label"> Рік випуску </label>
-						<select name="car_year_from" class="form__select" required>
-							<option selected hidden disabled>Від</option>
-							<option value="2015">2015</option>
-							<option value="2016">2016</option>
-							<option value="2017">2017</option>
-							<option value="2018">2018</option>
-							<option value="2019">2019</option>
-							<option value="2020">2020</option>
-							<option value="2020">2021</option>
-							<option value="2020">2022</option>
-							<option value="2020">2023</option>
-						</select>
-						<select name="car_year_to" class="form__select" required>
-							<option selected hidden disabled>До</option>
-							<option value="2015">2015</option>
-							<option value="2016">2016</option>
-							<option value="2017">2017</option>
-							<option value="2018">2018</option>
-							<option value="2019">2019</option>
-							<option value="2020">2020</option>
-							<option value="2020">2021</option>
-							<option value="2020">2022</option>
-							<option value="2020">2023</option>
-						</select>
-						<label class="form__label"> Ціна </label>
-						<input
-							type="text"
-							name="car_price-from"
-							placeholder="Від"
-							pattern="[0-9]{3-6}"
-							class="form__input"
-							required />
-						<input
-							type="text"
-							name="car_price-to"
-							placeholder="До"
-							pattern="[0-9]{3-6}"
-							class="form__input"
-							required />
+					<div class="form__content__box">
+						<fieldset class="form__item">
+							<label for="CarColor" class="form__label"> Колір </label>
+							<select name="car_color" id="CarColor" class="form__select">
+								<option selected hidden disabled value="">Колір</option>
+								<option value="blue">Синій</option>
+								<option value="black">Чорний</option>
+								<option value="white">Білий</option>
+							</select>
+						</fieldset>
+						<fieldset class="form__item">
+							<legend class="form__legend">Рік випуску</legend>
+							<div class="form__item__box">
+								<select name="car_year_from" class="form__select">
+									<option selected hidden disabled value="">Від</option>
+									<option value="2015">2015</option>
+									<option value="2016">2016</option>
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+									<option value="2020">2021</option>
+									<option value="2020">2022</option>
+									<option value="2020">2023</option>
+								</select>
+								<select name="car_year_to" class="form__select">
+									<option selected hidden disabled value="">До</option>
+									<option value="2015">2015</option>
+									<option value="2016">2016</option>
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+									<option value="2020">2021</option>
+									<option value="2020">2022</option>
+									<option value="2020">2023</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="form__item">
+							<legend class="form__legend">Ціна</legend>
+							<div class="form__item__box">
+								<input
+									type="text"
+									name="car_price-from"
+									placeholder="Від"
+									pattern="[0-9]{3-6}"
+									class="form__input" />
+								<input
+									type="text"
+									name="car_price-to"
+									placeholder="До"
+									pattern="[0-9]{3-6}"
+									class="form__input" />
+							</div>
+						</fieldset>
 					</div>
-					<div class="form__content">
-						<label class="form__label"> Стан автомобіля </label>
-						<input
-							type="checkbox"
-							name="condition"
-							value="new"
-							class="form__checkbox" />
-						<label class="form__label"> Новий </label>
-						<input
-							type="checkbox"
-							name="condition"
-							value="used"
-							class="form__checkbox" />
-						<label class="form__label"> Вживаний </label>
-						<input
-							type="checkbox"
-							name="condition"
-							value="custom-clearence"
-							class="form__checkbox" />
-						<label class="form__label"> Розмитнений </label>
-						<input
-							type="checkbox"
-							name="condition"
-							value="non-custom-clearence"
-							class="form__checkbox" />
-						<label class="form__label"> Не розмитнений </label>
-						<input
-							type="checkbox"
-							name="condition"
-							value="crushed"
-							class="form__checkbox" />
-						<label class="form__label"> Битий </label>
-						<input
-							type="checkbox"
-							name="condition"
-							value="non-crushed"
-							class="form__checkbox" />
-						<label class="form__label"> Не Битий </label>
-						<label class="form__label"> Комфорт </label>
-						<input
-							type="checkbox"
-							name="comfort"
-							value="ac"
-							class="form__checkbox" />
-						<label class="form__label"> Кондиціонер </label>
-						<input
-							type="checkbox"
-							name="comfort"
-							value="multymedia"
-							class="form__checkbox" />
-						<label class="form__label"> Мультимедіа </label>
-						<input
-							type="checkbox"
-							name="comfort"
-							value="leather-interior"
-							class="form__checkbox" />
-						<label class="form__label"> Шкіряний салон </label>
-						<input
-							type="checkbox"
-							name="comfort"
-							value="sunroof"
-							class="form__checkbox" />
-						<label class="form__label"> Люк </label>
-						<input
-							type="checkbox"
-							name="comfort"
-							value="cruise-control"
-							class="form__checkbox" />
-						<label class="form__label"> Круїз-контроль </label>
-						<input
-							type="checkbox"
-							name="comfort"
-							value="multi-wheel"
-							class="form__checkbox" />
-						<label class="form__label"> Мультируль </label>
+					<div class="form__content__box">
+						<fieldset class="form__item">
+							<legend class="form__legend">Стан автомобіля</legend>
+							<div class="form__item__container">
+								<input
+									type="checkbox"
+									name="condition"
+									value="new"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify"> Новий </label>
+								<input
+									type="checkbox"
+									name="condition"
+									value="used"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify">
+									Вживаний
+								</label>
+								<input
+									type="checkbox"
+									name="condition"
+									value="custom-clearence"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify">
+									Розмитнений
+								</label>
+							</div>
+							<div class="form__item__container">
+								<input
+									type="checkbox"
+									name="condition"
+									value="non-custom-clearence"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify">
+									Не розмитнений
+								</label>
+
+								<input
+									type="checkbox"
+									name="condition"
+									value="crushed"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify"> Битий </label>
+								<input
+									type="checkbox"
+									name="condition"
+									value="non-crushed"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify">
+									Не Битий
+								</label>
+							</div>
+						</fieldset>
+						<fieldset class="form__item">
+							<legend class="form__legend">Комфорт</legend>
+							<div class="form__item__container">
+								<input
+									type="checkbox"
+									name="comfort"
+									value="ac"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify">
+									Кондиціонер
+								</label>
+								<input
+									type="checkbox"
+									name="comfort"
+									value="multymedia"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify">
+									Мультимедіа
+								</label>
+								<input
+									type="checkbox"
+									name="comfort"
+									value="leather-interior"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify">
+									Шкіряний салон
+								</label>
+							</div>
+							<div class="form__item__container">
+								<input
+									type="checkbox"
+									name="comfort"
+									value="sunroof"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify"> Люк </label>
+								<input
+									type="checkbox"
+									name="comfort"
+									value="cruise-control"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify">
+									Круїз-контроль
+								</label>
+								<input
+									type="checkbox"
+									name="comfort"
+									value="multi-wheel"
+									class="form__checkbox" />
+								<label class="form__label form__label--specify">
+									Мультируль
+								</label>
+							</div>
+						</fieldset>
 					</div>
-				</form>
-			</section>
-		</main>
+				</div>
+				<div class="form__btn">
+					<button type="submit" class="form__btn__item">Пошук</button>
+				</div>
+			</form>
+		</section>
 	</body>
 </html>
