@@ -7,7 +7,8 @@ body {
     color: #00233f;
 }
 /* 10 */
-.header { 
+.header,
+.footer { 
     background: #70afe2;
     display: flex;
     justify-content:space-between;
@@ -15,12 +16,14 @@ body {
     align-items: center;
 }
 /* 10 */
-.header__logo {    
+.header__logo,
+.footer__logo {    
     display: block;
     width: 100px;
 }
 /* 10 */
-.header__heading {
+.header__heading,
+.footer__heading {
     font-size: 3rem;
     color: #00233f;
     text-transform: uppercase;
@@ -158,9 +161,17 @@ body {
     border-radius: 10px;
     background-color: #b2d8f7;
 }
+.car__image__box {
+    overflow: hidden;
+}
 .car__image {
     width: 100%;
     margin-bottom: 2%;
+    transition: 0.3s;
+}
+.car__image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 .car__header {
     display: flex;
@@ -193,4 +204,8 @@ body {
 }
 .car__link {
     display: block;
+}
+.footer {
+    justify-content: center;
+    gap: 20px;
 }
