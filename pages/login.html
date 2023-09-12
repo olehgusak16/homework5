@@ -26,32 +26,36 @@
 				<section class="login__form">
 					<h2 class="form__heading">Вхід:</h2>
 					<form action="https://fom.in.ua/echo" class="form">
-						<fieldset class="form__item">
+						<fieldset class="form__item form__item--uniq">
 							<label for="post" class="form__label"> Пошта </label>
 							<input
 								type="email"
 								name="post"
 								id="post"
 								class="form__input"
-								placeholder="Пошта" />
+								placeholder="Пошта"
+								required />
 						</fieldset>
-						<fieldset class="form__item">
+						<fieldset class="form__item form__item--uniq">
 							<label for="password" class="form__label"> Пароль </label>
 							<input
 								type="password"
 								name="password"
 								id="password"
 								class="form__input"
-								placeholder="Пароль" />
+								placeholder="Пароль"
+								required />
 						</fieldset>
-						<fieldset class="form__item form__item--special">
+						<fieldset class="form__item form__item--change form__item--uniq">
 							<input
-								type="radio"
+								type="checkbox"
 								name="remember"
 								id="remember"
-								class="form__radio" />
-							<label for="remember">Запамятати мене</label>
-							<a href="#"> Забули пароль?</a>
+								class="form__checkbox" />
+							<label for="remember" class="form__label__remember"
+								>Запамятати мене</label
+							>
+							<a href="#" class="form__login__link"> Забули пароль?</a>
 						</fieldset>
 						<div class="form__btn">
 							<button type="submit" class="form__btn__item">Вхід</button>

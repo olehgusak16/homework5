@@ -1,13 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<title>Реєстрація</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<a href="../index.html" class="header__link">
+					<img src="../img/logo.png" alt="" class="header__logo" />
+				</a>
+				<h1 class="header__heading">Автомагазин</h1>
+				<div class="header__autorization">
+					<a href="../pages/login.html" class="header__autorization__link">
+						Вхід
+					</a>
+				</div>
+			</header>
+			<main class="login">
+				<section class="login__form">
+					<h2 class="form__heading">Реєстрація:</h2>
+					<form action="https://fom.in.ua/echo" class="form">
+						<fieldset class="form__item form__item--uniq">
+							<label for="post" class="form__label"> Імя </label>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								class="form__input"
+								placeholder="Імя"
+								required />
+						</fieldset>
+						<fieldset class="form__item form__item--uniq">
+							<label for="post" class="form__label"> Прізвище </label>
+							<input
+								type="text"
+								name="surname"
+								id="surname"
+								class="form__input"
+								placeholder="Прізвище"
+								required />
+						</fieldset>
+						<fieldset class="form__item form__item--uniq">
+							<label for="post" class="form__label"> Номер телефону </label>
+							<input
+								type="tel"
+								name="phone"
+								id="phone"
+								class="form__input"
+								placeholder="0960000000"
+								required />
+						</fieldset>
+						<fieldset class="form__item form__item--uniq">
+							<label for="post" class="form__label"> Пошта </label>
+							<input
+								type="email"
+								name="post"
+								id="post"
+								class="form__input"
+								placeholder="Пошта"
+								required />
+						</fieldset>
+						<fieldset class="form__item form__item--uniq">
+							<label for="password" class="form__label"> Пароль </label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								class="form__input"
+								placeholder="Пароль"
+								required />
+						</fieldset>
+						<fieldset class="form__item form__item--modify form__item--uniq">
+							<input
+								type="checkbox"
+								name="agree"
+								value="agree"
+								class="form__checkbox"
+								required
+								id="agree" />
+							<label class="form__label form__label--specify" for="agree">
+								Погоджуюся з правилами сайту
+							</label>
+						</fieldset>
+						<div class="form__btn">
+							<button type="submit" class="form__btn__item">Вхід</button>
+						</div>
+					</form>
+				</section>
+			</main>
+			<footer class="footer">
+				<a href="../index.html" class="header__link">
+					<img src="../img/logo.png" alt="" class="footer__logo" />
+				</a>
+				<h1 class="footer__heading">Автомагазин</h1>
+			</footer>
+		</div>
+	</body>
 </html>

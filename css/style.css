@@ -6,6 +6,7 @@ body {
     background: #cae3f8;
     color: #00233f;
 }
+/* 10 */
 .wrapper {
     width: 100%;
     min-height: 100vh;
@@ -16,6 +17,7 @@ body {
 }
 /* 10 */
 .header,
+/* 10 */
 .footer { 
     background: #70afe2;
     display: flex;
@@ -25,12 +27,14 @@ body {
 }
 /* 10 */
 .header__logo,
+/* 10 */
 .footer__logo {    
     display: block;
     width: 100px;
 }
 /* 10 */
 .header__heading,
+/* 10 */
 .footer__heading {
     font-size: 3rem;
     color: #00233f;
@@ -38,7 +42,9 @@ body {
 }
 /* 10 */
 .header__autorization__link,
+/* 10 */
 .form__btn__item,
+/* 10 */
 .car__link {
     text-decoration: none;
     padding: 12px 20px;
@@ -50,7 +56,9 @@ body {
 }
 /* 20 */
 .header__autorization__link:hover,
+/* 20 */
 .form__btn__item:hover,
+/* 20 */
 .car__link:hover {
     background-color: #1366d6;
     box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
@@ -61,39 +69,53 @@ body {
     margin-right: 15px;
 }
 /* 10 */
-.content__search,
 .content,
+/* 10 */
 .login {
-    padding: 1% 2%;
+    padding: 1% 4%;
 }
+/* 10 */
 .login {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
 }
+/* 10 */
+.content__search {
+    margin-bottom: 4%;
+}
+/* 10 */
 .content__search__heading,
+/* 10 */
 .form__heading {
     font-size: 2rem;
     margin-bottom: 1%;
 }
+/* 10 */
 .form__heading {
     margin-bottom: 5%;
 }
+/* 10 */
 .content__search__form,
+/* 10 */
 .form {
     padding: 1%;
     border:#70afe2 4px solid; 
     border-radius: 10px;
 }
+/* 10 */
 .form {
     padding: 30px 50px;
 }
+/* 10 */
 .form__content {
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-bottom: 2%;
 }
+/* 11 */
 .form__content::before{
     content: "";
     position: absolute;
@@ -105,35 +127,43 @@ body {
     background: url(../img/form-background.png) no-repeat center/contain;
     opacity: .1;
 }
+/* 10 */
 .form__content__box {
     width: 30%;
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
+/* 10 */
 .form__label,
+/* 10 */
 .form__legend {
     font-weight: 600;
     display: block;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     font-size: 1.2rem;
 }
-.form__legend {
-    margin-bottom: 2%;
-}
+/* 10 */
 .form__select {
     width: 100%;
 }
+/* 10 */
 .form__radio {
     margin-top: 2%;
 }
+/* 20 */
 .form__select:hover,
+/* 20 */
 .form__input:hover {
     background-color: #197ed1;
 }
+/* 11 */
 .form__input::placeholder {
     color: #fff;
 }
+/* 10 */
 .form__select,
+/* 10 */
 .form__input {
     background-color: #5d9fd4;
     color: #fff;
@@ -141,69 +171,155 @@ body {
     border: #197ed1 2px solid;
     padding: 1%;
 }
+/* 10 */
 .form__input {
     padding-left: 8px;
     width: 100%;
 }
-.form__item {
-    margin-bottom: 2%;
+/* 10 */
+.form__checkbox {
+    display: none;
 }
-.form__item--special {
-    
+/* 10 */
+.form__label--specify,
+/* 10 */
+.form__label__remember {
+    position: relative;
+    padding-left: 15px;
 }
+/* 11 */
+.form__label--specify::before,
+/* 11 */
+.form__label__remember::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #0b7cd8;
+    border-radius: 2px;
+    background: #fff;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .2s;
+}
+/* 11 */
+.form__label--specify::after,
+/* 11 */
+.form__label__remember::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    left: 1px;
+    top: 4px;
+    opacity: 0;
+    transition: .3s;
+}
+/* 31 */
+.form__checkbox:checked + .form__label--specify::before,
+/* 31 */
+.form__checkbox:checked + .form__label__remember::before {
+    background: #0b7cd8;
+}
+/* 31 */
+.form__checkbox:checked + .form__label--specify::after,
+/* 31 */
+.form__checkbox:checked + .form__label__remember::after {
+    opacity: 1;
+}
+/* 10 */
+.form__item--modify {
+    display: flex;
+    text-wrap: nowrap;
+    gap: 5px;
+}
+/* 10 */
 .form__item__container{
     padding-left: 3%;
 }
+/* 10 */
 .form__label--specify {
     display: inline-block;
     font-weight: 400;
     font-size: 1rem;
     margin-right: 1%;
 }
+/* 10 */
+.form__item--change {
+    margin-bottom: 15px;
+}
+/* 10 */
+.form__item--uniq {
+    margin-bottom: 15px;
+}
+/* 10 */
 .form__item__box {
     display: flex;
     gap: 10px;
-}   
+}  
+/* 20  */
 .form__item__box .form__input,
+/* 20 */
 .form__item__box .form__select {
     flex-grow: 1;
 }
+/* 10 */
 .form__btn {
-    margin-top: 2%;
     display: flex;
     justify-content: center;
 }
+/* 10 */
 .form__btn__item {
     border: none;
     font-weight: 600;
     padding: 12px 50px;
     font-size: 1.1rem;
 }
+/* 10 */
+.form__label__remember {
+    margin-right: 10px;
+    display: inline-block;
+}
+/* 10 */
+.form__login__link {
+    color: #0b7cd8;
+}
+/* 10 */
 .cars {
     display: flex;
-    gap: 5px;
+    justify-content: space-between;
     font-family: 'Roboto', sans-serif;
 }
+/* 10 */
 .car {
-    width: 25%;
-    margin: 3% 2%;
+    width: 23%;
     padding: 1%;
     border:#70afe2 4px solid; 
     border-radius: 10px;
     background-color: #b2d8f7;
 }
+/* 10 */
 .car__image__box {
     overflow: hidden;
-}
-.car__image {
-    width: 100%;
     margin-bottom: 2%;
+}
+/* 10 */
+.car__image {
+    display: block;
+    width: 100%;
     transition: 0.3s;
 }
+/* 20 */
 .car__image:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+/* 10 */
 .car__header {
     display: flex;
     justify-content: space-between;
@@ -212,30 +328,36 @@ body {
     color: #12314b;
     padding: 1% 5%;
 }
+/* 10 */
 .car__content {
     margin-top: 1%;
     padding-left: 5%;
 }
+/* 10 */
 .content__data {
     display: flex;
-    gap: 20px;
-    
+    gap: 20px;  
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
+/* 10 */
 .car__content__heading {
     font-weight: 600;
     margin-bottom: 1%;
 }
+/* 10 */
 .car__content__text {
     margin-bottom: 2%;
 }
+/* 10 */
 .car__footer {
     text-align: center;
 }
+/* 10 */
 .car__link {
     display: block;
 }
+/* 10 */
 .footer {
     justify-content: center;
     gap: 20px;
